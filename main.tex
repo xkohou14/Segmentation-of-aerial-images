@@ -53,7 +53,9 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-Praesent imperdiet, lacus nec varius placerat, est ex eleifend justo, a vulputate leo massa consectetur nunc. Donec posuere in mi ut tempus. Pellentesque sem odio, faucibus non mi in, laoreet maximus arcu. In hac habitasse platea dictumst. Nunc euismod neque eu urna accumsan, vitae vehicula metus tincidunt. Maecenas congue tortor nec varius pellentesque. Pellentesque bibendum libero ac dignissim euismod. Aliquam justo ante, pretium vel mollis sed, consectetur accumsan nibh. Nulla sit amet sollicitudin est. Etiam ullamcorper diam a sapien lacinia faucibus.
+In last decade, the world faces a new challenge -- exponential increasing of data to analyze. With the increasing of the data, requirements for effective data processing increase too because the analysis is not the task for huge data centres anymore. We can analyze data on many devices -- from supercomputers to mobile devices. Huge neural networks are not sufficient for analysis on the second named devices so lightweight neural networks appear on the scene.
+
+In this article, we're going to experiment with lightweight neural network in the analysis of aerial images. For comparison we use UNet network that is classical network used in segmentation tasks. We try to achieve good results in both architectures and we compare these networks in the size and computational efficiency. 
 \end{abstract}
 
 \maketitle
@@ -100,9 +102,9 @@ Aliquam justo ante, pretium vel mollis sed, consectetur accumsan nibh. Nulla sit
 
 \begin{figure}
   \centering
-  \includegraphics[width=\linewidth]{figures/duck}
-  \caption{An illustration of a Mallard Duck. Picture from Mabel Osgood Wright, \textit{Birdcraft}, published 1897.}
-  \label{fig:duck}
+  \includegraphics[width=\linewidth]{figures/img_uvodka.png}
+  \caption{Example of segmentation tasks.}
+  \label{fig:uvodka}
 \end{figure}
 
 \begin{table*}[t]
@@ -192,7 +194,7 @@ Some examples of references. A paginated journal article~\cite{Abril07}, an enum
 %\clearpage
 
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{sample}
+\bibliography{resources, sample}
 
 \end{document}
 \endinput
